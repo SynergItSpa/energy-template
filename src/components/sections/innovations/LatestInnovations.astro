@@ -15,6 +15,38 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
+<style>
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+</style>
+
 <section id="innovations" class=`${className}`>
   <Container
     className="mx-auto flex flex-col items-center justify-center text-center"
@@ -32,7 +64,7 @@ const { className } = Astro.props;
         const flexRow = oddIndex ? "midmd:flex-row-reverse" : "midmd:flex-row";
         const bgColor = "";
         return (
-          <div class={`w-100 ${bgColor}  pb-32`}>
+          <div class={`w-100 ${bgColor} pb-32 innovation-item opacity-0`}>
             <div
               class={`flex flex-col gap-10 lg:gap-12 ${flexRow} mx-auto max-w-7xl w-full`}
             >
@@ -48,7 +80,51 @@ const { className } = Astro.props;
               </div>
               <div class="max-w-md mx-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
                 <Title3>{solution.title}</Title3>
-                <Paragraph className="mt-3 ">{solution.description}</Paragraph>
+                {solution.timeline ? (
+                  <div class="mt-4 relative">
+                    <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-green-400"></div>
+                    <ol class="space-y-4">
+                      {solution.timeline.map((step, idx) => (
+                        <li class="flex items-start gap-4 relative">
+                          <div class="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white relative z-10">
+                            {step.icon === "contact" && (
+                              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff"/><path fill="#22c55e" d="M7 8a5 5 0 0 1 10 0v2a5 5 0 0 1-10 0V8Zm5 7a7 7 0 0 0 7-7V8a7 7 0 0 0-7-7 7 7 0 0 0-7 7v2a7 7 0 0 0 7 7Z"/></svg>
+                            )}
+                            {step.icon === "content" && (
+                              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff"/><path fill="#22c55e" d="M7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/></svg>
+                            )}
+                            {step.icon === "design" && (
+                              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff"/><path fill="#22c55e" d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+                            )}
+                            {step.icon === "hosting" && (
+                              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff"/><path fill="#22c55e" d="M6 8h12v2H6V8zm0 4h12v2H6v-2zm0 4h12v2H6v-2z"/></svg>
+                            )}
+                            {step.icon === "done" && (
+                              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff"/><path fill="#22c55e" d="M9.5 17.5a1 1 0 0 1-.707-.293l-4.5-4.5a1 1 0 1 1 1.414-1.414l3.793 3.793 7.793-7.793a1 1 0 0 1 1.414 1.414l-8.5 8.5A1 1 0 0 1 9.5 17.5Z"/></svg>
+                            )}
+                          </div>
+                          <div class="flex-1 pt-1">
+                            <span class="font-semibold text-black dark:text-white text-sm block">{step.step}</span>
+                            <div class="text-black dark:text-white text-xs mt-1 leading-relaxed">{step.description}</div>
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                ) : Array.isArray(solution.description) ? (
+                  <ul class="mt-3 space-y-3 text-left">
+                    {solution.description.map((point) => (
+                      <li class="flex items-start gap-2">
+                        <span class="inline-block text-green-500">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 17.5a1 1 0 0 1-.707-.293l-4.5-4.5a1 1 0 1 1 1.414-1.414l3.793 3.793 7.793-7.793a1 1 0 0 1 1.414 1.414l-8.5 8.5A1 1 0 0 1 9.5 17.5Z"/></svg>
+                        </span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <Paragraph className="mt-3 ">{solution.description}</Paragraph>
+                )}
               </div>
             </div>
           </div>
@@ -57,3 +133,22 @@ const { className } = Astro.props;
     }
   </Container>
 </section>
+
+<script is:inline>
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.innovation-item');
+
+  items.forEach((item, index) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const direction = index % 2 === 0 ? 'left' : 'right';
+          item.classList.add('animate-slide-' + direction);
+          observer.unobserve(item);
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(item);
+  });
+});
+</script>

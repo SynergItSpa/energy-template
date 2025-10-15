@@ -1,34 +1,34 @@
+import img3 from "./assets/amazonas2.png";
 import img1 from "./assets/solar-person.png";
 import img2 from "./assets/wind-person.png";
-import img3 from "./assets/amazonas2.png";
 
 export const projectsSection = {
-  title: "Featured Projects",
-  subheading1_1: "Explore Our Successful ",
-  subheading1_2: "Green Energy Endeavors",
+  title: "Casos de Éxito",
+  subheading1_1: "Conoce negocios que crecieron ",
+  subheading1_2: " gracias a su nueva web",
   projects: [
     {
-      title: "Solar-Powered Community",
+      title: "Tienda de Paneles Solares",
       description:
-        "Empowering a community with sustainable solar energy solutions. Learn how [Company Name] brought clean and affordable electricity to homes, schools, and businesses.",
-      location: "Los Angeles, California, USA",
+        "Aumentó sus ventas un 300% tras lanzar su web con nuestra plantilla. Ahora recibe pedidos todos los días y gestiona su catálogo fácilmente.",
+      location: "Santiago, Chile",
       visual: img1,
     },
     {
-      title: "Wind Farm Innovation",
+      title: "Consultora de Servicios",
       description:
-        "Revolutionizing wind energy with our innovative wind farm. Discover how [Company Name] is harnessing the power of the wind to create a greener and more sustainable future.",
-      location: "Scottish Highlands, United Kingdom",
+        "Captó nuevos clientes y mejoró su imagen profesional. Su web permite agendar reuniones y mostrar testimonios de éxito.",
+      location: "Madrid, España",
       visual: img2,
     },
     {
-      title: "Hydropower Plant Success",
+      title: "Agencia de Turismo",
       description:
-        "A journey into our hydropower success story. Explore how [Company Name] transforms the energy of flowing water into a reliable and eco-friendly power source.",
-      location: "Amazon Rainforest, South America",
+        "Recibe reservas online y promociona sus paquetes con fotos atractivas. La web ayudó a fidelizar clientes y aumentar la visibilidad local.",
+      location: "Buenos Aires, Argentina",
       visual: img3,
     },
   ],
-  callToAction: "Embark on a Green Energy Journey with [Company Name]",
-  button: "View More Projects",
+  callToAction: "Descubre cómo tu negocio puede ser el próximo caso de éxito",
+  button: "Ver más historias",
 };

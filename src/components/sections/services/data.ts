@@ -4,56 +4,56 @@ import img2 from "./assets/wind.png";
 import img3 from "./assets/hydro.png";
 import img4 from "./assets/storage.png";
 // TODO
-import img5 from "./assets/smart-grid.png";
 import img6 from "./assets/green.png";
+import img5 from "./assets/smart-grid.png";
 
 export const servicesSectionData = {
-  title: "Our Sustainable Energy Solutions",
+  title: "Funcionalidades para tu Negocio",
   subheading: {
-    text1_1: "Experience a Revolution in Energy Solutions - ",
-    text1_2: "Embrace Innovation, Embrace Sustainability.",
+    text1_1: "Convierte tu web en el motor de ventas de tu empresa - ",
+    text1_2: "Diseño, velocidad y resultados.",
     text2:
-      "We're here to Empower Your Life and Spaces with Clean, Renewable Energy, Paving the Way for a Brighter and Greener Tomorrow.",
+      "Nuestra plantilla incluye todo lo que necesitas para destacar y tener más presencia en internet.",
   },
   services: [
     {
-      title: "Solar Power Solutions",
+      title: "Diseño Personalizable",
       briefDescription:
-        "Harness the power of the sun with our state-of-the-art solar panels. Generate clean energy for your home or business and reduce your carbon footprint.",
+        "Adapta la web a la imagen de tu negocio y transmite profesionalismo desde el primer vistazo.",
       visual: img1,
     },
     {
-      title: "Wind Energy Harvesting",
+      title: "Optimización SEO",
       briefDescription:
-        "Embrace the power of the wind. Our wind energy solutions provide a sustainable and efficient way to generate electricity, ensuring a greener future.",
+        "Aparece en los primeros lugares de Google y atrae más clientes potenciales.",
       visual: img2,
     },
     {
-      title: "Hydropower Systems",
+      title: "Carga ultrarrápida",
       briefDescription:
-        "Flow with nature. Our hydropower systems harness the energy of flowing water, delivering reliable and eco-friendly electricity to your doorstep.",
+        "Tu web se carga en segundos, mejorando la experiencia de usuario y aumentando conversiones.",
       visual: img3,
     },
     {
-      title: "Energy Storage Solutions",
+      title: "Integración de contacto",
       briefDescription:
-        "Store excess energy efficiently. Our cutting-edge energy storage solutions ensure uninterrupted power supply, even during cloudy days or low-wind periods.",
+        "Facilita que tus clientes te escriban o llamen directamente desde la web.",
       visual: img4,
     },
     {
-      title: "Smart Grid Technology",
+      title: "Sección de productos o servicios",
       briefDescription:
-        "Navigate the future with our smart grid technology. Optimize energy distribution, monitor consumption, and contribute to a more sustainable and efficient energy ecosystem.",
+        "Muestra lo mejor de tu negocio con galerías, descripciones y llamados a la acción.",
       visual: img5,
     },
     {
-      title: "Energy-efficient Lighting",
+      title: "Blog y testimonios",
       briefDescription:
-        "Illuminate your space responsibly. Our energy-efficient lighting solutions provide bright, sustainable, and cost-effective illumination for homes and businesses.",
+        "Agrega contenido relevante y opiniones de clientes para aumentar tu credibilidad.",
       visual: img6,
     },
   ],
   callToAction:
-    "Discover the Future of Green Energy. Choose Your Sustainable Solution Today!",
-  buttonText: "Explore More",
+    "Descubre cómo una web profesional puede transformar tu negocio.",
+  buttonText: "Solicitar",
 };

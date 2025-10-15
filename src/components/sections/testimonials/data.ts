@@ -3,33 +3,33 @@ import img2 from "./assets/person2.png";
 import img3 from "./assets/person3.png";
 
 export const testimonialsSection = {
-  title: "What Our Customers Say",
-  subheading1_1: "Hear from Those",
-  subheading1_2: " Who Have Embraced Sustainable Living",
+  title: "Lo que opinan nuestros clientes",
+  subheading1_1: "Historias reales de negocios",
+  subheading1_2: " que crecieron con su nueva web",
   testimonials: [
     {
-      name: "Emily Johnson",
+      name: "María González",
       visual: img1,
-      occupation: "Homeowner",
+      occupation: "Dueña de tienda online",
       quote:
-        "Switching to [Company Name] was the best decision I made. Our home is now powered by clean energy, and I feel great knowing I'm contributing to a healthier planet.",
+        "La web me ayudó a vender más y mostrar mis productos de forma profesional. ¡La recomiendo totalmente!",
     },
     {
-      name: "Carlos Rodriguez",
+      name: "Javier Pérez",
       visual: img2,
-      occupation: "Business Owner",
+      occupation: "Consultor de servicios",
       quote:
-        "As a business owner, sustainability is crucial. [Company Name] provided us with a seamless transition to green energy, and we've seen a positive impact on both the environment and our operating costs.",
+        "Ahora mis clientes pueden agendar reuniones fácilmente y mi negocio se ve mucho más confiable.",
     },
     {
-      name: "Sophie Chen",
+      name: "Ana Torres",
       visual: img3,
-      occupation: "Environmental Advocate",
+      occupation: "Restaurant",
       quote:
-        "I'm passionate about the environment, and [Company Name] aligns perfectly with my values. Their commitment to renewable energy and reducing carbon footprint is commendable.",
+        "Recibo más reservas y mi restaurante aparece en Google. La web fue una inversión que valió la pena.",
     },
   ],
   visual: "customer-testimonials-image.jpg",
-  callToAction: "Join Our Growing Community of Satisfied Customers",
-  button: "Get Started",
+  callToAction: "Únete a los negocios que ya están creciendo",
+  button: "Quiero mi web",
 };

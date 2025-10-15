@@ -1,19 +1,19 @@
 import img from "./assets/green-hands.png";
 
 export const environmentalImpactSection = {
-  title: "Environmental Impact",
-  subheading1_1: "Choosing [Company Name] for a",
-  subheading1_2: " Greener Tomorrow",
+  title: "Impacto de Tener una Web Profesional",
+  subheading1_1: "Elige una plantilla moderna para",
+  subheading1_2: " impulsar tu negocio",
   description:
-    "At [Company Name], we are committed to making a positive impact on the environment. By choosing our sustainable energy solutions, you contribute to:",
+    "Con nuestra plantilla web, tu empresa destaca en internet y atrae más clientes. Tener una web profesional te ayuda a:",
   impactPoints: [
-    "Reducing Carbon Emissions",
-    "Conserving Natural Resources",
-    "Preserving Biodiversity",
-    "Mitigating Climate Change",
-    "Promoting a Cleaner and Healthier Planet",
+    "Aumentar tu visibilidad online",
+    "Generar confianza y credibilidad",
+    "Facilitar el contacto con tus clientes",
+    "Mostrar tus productos y servicios de forma atractiva",
+    "Impulsar el crecimiento de tu negocio",
   ],
   visual: img,
-  callToAction: "Join Us in Building a Sustainable Future",
-  button: "Learn More",
+  callToAction: "Haz crecer tu negocio con una web moderna",
+  button: "Ver plantillas",
 };

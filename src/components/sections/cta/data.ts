@@ -1,33 +1,32 @@
-import svg1 from "./assets/green-1.svg?raw";
 import svg2 from "./assets/green-2.svg?raw";
 import svg3 from "./assets/green-3.svg?raw";
 import svg4 from "./assets/green-4.svg?raw";
 
 export const getInvolvedSection = {
-  title: "Get Involved",
-  subheading1_1: "Join Us ",
-  subheading1_2: "in Building a Sustainable Future",
+  title: "¡Transforma tu negocio!",
+  subheading1_1: "Da el siguiente paso ",
+  subheading1_2: "y haz crecer tu empresa con una web profesional",
   initiatives: [
     {
-      title: "Community Outreach",
+      title: "Agenda una reunión gratuita",
       description:
-        "Discover our community initiatives aimed at promoting awareness and education on sustainable living. Join us in creating a positive impact together.",
+        "Agenda una reunión con nuestro equipo y descubre cómo una web profesional puede impulsar tu negocio.",
       visual: svg2,
     },
     {
-      title: "Green Events",
+      title: "Personalización a medida",
       description:
-        "Participate in our upcoming green events. From tree-planting drives to eco-friendly workshops, be a part of the movement towards a healthier planet.",
+        "Te ayudamos a adaptar la web a tu marca, colores y estilo. Tu empresa se verá única y profesional.",
       visual: svg4,
     },
     {
-      title: "Partnerships for Sustainability",
+      title: "Soporte y acompañamiento",
       description:
-        "Explore our partnerships with organizations dedicated to environmental conservation. Learn how you can contribute to sustainable practices through collaboration.",
+        "No estarás solo. Te guiamos en cada paso para que tu web esté lista y funcionando en poco tiempo.",
       visual: svg3,
     },
   ],
   visual: "get-involved-section-image.jpg",
-  callToAction: "Take Action Today for a Greener Tomorrow",
-  button: "Join Our Initiatives",
+  callToAction: "Agenda una reunión y lleva tu negocio al siguiente nivel",
+  button: "Quiero mi reunión",
 };

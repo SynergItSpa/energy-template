@@ -3,30 +3,63 @@ import imgSolar from "./assets/inno-panel.webp";
 import imgWind from "./assets/inno-wind.webp";
 
 export const innovationsSection = {
-  title: "Latest Innovations",
-  subheading1_1: "Discover Our Cutting-edge",
-  subheading1_2: " Green Energy Technologies",
+  title: "Innovaciones para tu Web",
+  subheading1_1: "Descubre funcionalidades avanzadas",
+  subheading1_2: " para destacar tu negocio",
   innovations: [
     {
-      title: "Smart Grid Integration",
-      description:
-        "Revolutionize energy distribution with our smart grid technology, optimizing efficiency, minimizing wastage, and adapting to demand fluctuations. Stay connected with innovative solutions for a sustainable, cost-effective energy ecosystem. Embrace the future with our cutting-edge smart grid integration, enhancing reliability and paving the way for efficiency and sustainability.",
+      title: "Haz que tu presencia online refleje la esencia de tu negocio",
+      description: [
+        "Personalización avanzada: Adapta fácilmente el template a la imagen y necesidades de tu negocio, ahorrando tiempo y recursos.",
+        "Múltiples opciones de diseño: Elige la estructura que mejor se adapte a tu contenido y haz que tu sitio destaque entre la competencia.",
+        "Diseño 100% responsivo: Tu sitio se verá y funcionará perfectamente en computadoras, tablets y celulares, brindando la mejor experiencia a tus clientes.",
+        "Integración multimedia: Agrega imágenes, videos y todo tipo de contenido para captar la atención y comunicar el valor de tu negocio."
+      ],
       visual: imgGrid,
     },
     {
-      title: "Advanced Solar Panel Design",
-      description:
-        "Boost solar efficiency with our state-of-the-art solar panel designs. Our innovative technologies capture more sunlight, ensuring maximum energy production for your home or business. Experience enhanced sustainability and increased energy output with our advanced solar solutions.",
+      title: "Pensado para el crecimiento y éxito de tu negocio",
+      description: [
+        "Mayor interacción con tus clientes: Atrae y retén a tus visitantes con secciones interactivas y un diseño intuitivo.",
+        "Actualizaciones constantes: Mantén tu sitio siempre actualizado y alineado con las últimas tendencias y tecnologías.",
+        "Ahorro de tiempo y recursos: Olvídate de empezar desde cero. Lanza tu sitio en tiempo récord y enfócate en hacer crecer tu negocio.",
+        "Soporte y comunicación: SynergIT está disponible para resolver cualquier duda y potenciar tu presencia digital."
+      ],
       visual: imgSolar,
     },
     {
-      title: "Next-gen Wind Turbines",
-      description:
-        "Transform your wind energy experience with our next-generation wind turbines. Our sleek design, enhanced efficiency, and minimal environmental impact underscore our commitment to innovation. Elevate your sustainable energy journey with cutting-edge wind solutions that prioritize both performance and environmental responsibility.",
+      title: "Lanza el sitio de tu negocio rápidamente con nuestro Template",
+      timeline: [
+        {
+          step: "Contacto",
+          description: "Comienza contactándonos. En pocos días tendrás la base perfecta para tu negocio lista para personalizar.",
+          icon: "contact"
+        },
+        {
+          step: "Entréguenos su contenido",
+          description: "Compártenos la historia de tu negocio, tus productos, servicios y todo lo que te hace único. ¡Hazlo tuyo!",
+          icon: "content"
+        },
+        {
+          step: "Personaliza el diseño",
+          description: "Mediante meetings, ajusta colores, tipografías y secciones para que tu sitio refleje la identidad de tu marca.",
+          icon: "design"
+        },
+        {
+          step: "Hosting y dominio",
+          description: "Hosting y dominio para tu negocio, lo hacemos por ti, asegurando que tu sitio esté siempre disponible.",
+          icon: "hosting"
+        },
+        {
+          step: "¡Listo!",
+          description: "Tu sitio está publicado y listo para recibir clientes.",
+          icon: "done"
+        }
+      ],
       visual: imgWind,
     },
   ],
   visual: "innovations-section-image.jpg",
-  callToAction: "Explore the Future of Green Energy with [Company Name]",
-  button: "Learn More",
+  callToAction: "Explora las ventajas de una web moderna para tu empresa",
+  button: "Solicitar",
 };

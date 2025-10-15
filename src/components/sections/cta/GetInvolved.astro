@@ -1,9 +1,9 @@
 ---
+import BtnLink from "../../shared/BtnLink.astro";
 import Container from "../../shared/Container.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
-import EmailForm from "./components/EmailForm.astro";
 import InvolvementCard from "./components/InvolvementCard.astro";
 import { getInvolvedSection } from "./data.ts";
 
@@ -39,7 +39,12 @@ const { className } = Astro.props;
     </div>
 
     <div class="flex justify-center">
-      <EmailForm />
+       <BtnLink
+          text="Comenzar"
+          href="https://be.synergit.cl/"
+          className="flex justify-center w-full sm:w-max text-lg text-heading-2"
+          variant="cta"
+        />
     </div>
   </Container>
 </section>
